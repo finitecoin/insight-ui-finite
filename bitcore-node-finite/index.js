@@ -41,7 +41,7 @@ InsightUI.prototype.setupRoutes = function(app, express) {
       res.setHeader('Content-Type', 'text/html');
       res.send(self.indexFile);
     } else {
-      express.static(__dirname + '/../public/index.html')(req, res, next);
+      express.static(__dirname + '/../public/index')(req, res, next);
     }
   });
 };
